@@ -42,10 +42,10 @@ function handlerOption(event) {
       const { url, breeds } = data[0];
       const { name, description, temperament } = breeds[0];
       const markup = `<img class="photo" src="${url}" alt="${name}" width ="600"/>
-    <div class="card-info">
-       <h1>${name}</h1>
+      <div class="card-info">
+      <h1>${name}</h1>
       <p >${description}</p>
-       <p ><strong>Temperament:</strong> ${temperament}</p>
+      <p ><strong>Temperament:</strong> ${temperament}</p>
       </div>`;
       refs.loader.after(refs.catInfo);
       refs.catInfo.innerHTML = markup;
